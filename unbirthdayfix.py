@@ -1,18 +1,9 @@
-#! /usr/bin/env python
-
-# Calculate your unbirthday count (see Alice in Wonderland).
-# This is defined as the number of days from your birth until today
-# that weren't your birthday.  (The day you were born is not counted).
-# Leap years make it interesting.
 
 import sys
 import time
 import calendar
 
 def main():
-    # Note that the range checks below also check for bad types,
-    # e.g. 3.14 or ().  However syntactically invalid replies
-    # will raise an exception.
     if sys.argv[1:]:
         year = int(sys.argv[1])
     else:
